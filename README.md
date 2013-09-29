@@ -26,4 +26,4 @@ You can then run:
 
     python2.7 average_colour.py src_image.jpg olympics
 
-To generate a version of src_image.jpg out of the photos in the images/olympics folder. The finished image can be found at static/src_image_done.jpg. You can also run server.py and go to 127.0.0.1:8080/view/src_image to view the image. Clicking on an image inside the image will run average_colour.py on that image using the same set as the parent was created with.
+To generate a version of src_image.jpg out of the photos in the images/olympics folder. The finished image can be found at static/src_image_done.jpg. You can also run server.py and go to 127.0.0.1:8080/view/src_image to view the image. Clicking on an image inside the image will run average_colour.py on that image using the same set as the parent was created with. If you want to be able to download images from Flickr edit flickr.py with your key(s)

@@ -1,0 +1,23 @@
+<head>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+	  	$('#download').click(function(){
+	  		$('#progress').text('Downloading');
+	  		$.get('http://127.0.0.1:8080/download?tag={{ tag }}', function() {
+	  			$('#progress').text('Done');
+	  		});
+	  	});
+	  });
+	</script>
+</head>
+<body>
+  <form method='POST' action='/upload' enctype=multipart/form-data>
+    Flickr tag: <input type='text' name='flickr_tag' name='flickr_tag'/>
+    <a href='#' id='download'>Download</a><br />
+    <div id='progress'></div><br />
+    Image: <input type='file' id='file' name='file'/>
+    <input type='submit' />
+  </form>
+</body>
+

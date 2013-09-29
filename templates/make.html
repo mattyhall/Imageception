@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type='text/javascript'>
+			$(document).ready(function(){
+				$.get('http://127.0.0.1:8080/actually_make_the_thing?filename={{ filename }}&set={{ image_set }}',
+					function(data){
+						window.location.href = "/view?filename={{ short_filename }}";
+					}
+				);
+			});
+		</script>
+	</head>
+	<body>
+		Working
+	</body>
+</html>
